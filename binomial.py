@@ -16,21 +16,20 @@ def main():
     warnings.filterwarnings('ignore')
     os.system("cls")
 
-    print(f"┌────────────────────────────────────────────────────────────────────────────────────────────────────┐")
-    print(f"│ ██████╗   ██╗ ███╗    ██╗   ██████╗  ███╗    ███╗ ██╗     ████╗     ██╗       {colors.GREEN}██████╗  ██╗     ██╗{colors.ENDC} │")
-    print(f"│ ██╔══██╗  ██║ ████╗   ██║  ██╔═══██╗ ████╗  ████║ ██║    ██╔═██╗    ██║       {colors.GREEN}██╔══██╗  ██╗   ██╔╝{colors.ENDC} │")
-    print(f"│ ██║   ██╗ ██║ ██║██╗  ██║  ██║   ██║ ██║██╗██║██║ ██║   ██╔╝  ██╗   ██║       {colors.GREEN}██║  ██║   ██╗ ██╔╝{colors.ENDC}  │")
-    print(f"│ ███████╔╝ ██║ ██║ ██╗ ██║  ██║   ██║ ██║ ███╔╝██║ ██║   ████████║   ██║       {colors.GREEN}██████╔╝    ████╔╝{colors.ENDC}   │")
-    print(f"│ ██╔═══██╗ ██║ ██║  ██╗██║  ██║   ██║ ██║ ╚══╝ ██║ ██║  ██╔═════██╗  ██║       {colors.GREEN}██╔═══╝      ██╔╝{colors.ENDC}    │")
-    print(f"│ ██║  ██╔╝ ██║ ██║   ████║  ██║   ██║ ██║      ██║ ██║  ██║     ██║  ██║       {colors.GREEN}██║          ██║{colors.ENDC}     │")
-    print(f"│ ██████╔╝  ██║ ██║    ███║   ██████╔╝ ██║      ██║ ██║ ██╔╝      ██╗ ████████╗ {colors.GREEN}██║          ██║{colors.ENDC}     │")
-    print(f"│ ╚═════╝   ╚═╝ ╚═╝    ╚══╝   ╚═════╝  ╚═╝      ╚═╝ ╚═╝ ╚═╝       ╚═╝ ╚═══════╝ {colors.GREEN}╚═╝          ╚═╝{colors.ENDC}     │")
-    print(f"└────────────────────────────────────────────────────────────────────────────────────────────────────┘\n")
+    print(f"┌───────────────────────────────────────────────────────────────────────────────────────────────────┐")
+    print(f"│ ██████╗   ██╗ ███╗    ██╗  ██████╗  ███╗    ███╗ ██╗     ████╗     ██╗       {colors.GREEN}██████╗  ██╗     ██╗{colors.ENDC} │")
+    print(f"│ ██╔══██╗  ██║ ████╗   ██║ ██╔═══██╗ ████╗  ████║ ██║    ██╔═██╗    ██║       {colors.GREEN}██╔══██╗  ██╗   ██╔╝{colors.ENDC} │")
+    print(f"│ ██║   ██╗ ██║ ██║██╗  ██║ ██║   ██║ ██║██╗██║██║ ██║   ██╔╝  ██╗   ██║       {colors.GREEN}██║  ██║   ██╗ ██╔╝{colors.ENDC}  │")
+    print(f"│ ███████╔╝ ██║ ██║ ██╗ ██║ ██║   ██║ ██║ ███╔╝██║ ██║   ████████║   ██║       {colors.GREEN}██████╔╝    ████╔╝{colors.ENDC}   │")
+    print(f"│ ██╔═══██╗ ██║ ██║  ██╗██║ ██║   ██║ ██║ ╚══╝ ██║ ██║  ██╔═════██╗  ██║       {colors.GREEN}██╔═══╝      ██╔╝{colors.ENDC}    │")
+    print(f"│ ██║  ██╔╝ ██║ ██║   ████║ ██║   ██║ ██║      ██║ ██║  ██║     ██║  ██║       {colors.GREEN}██║          ██║{colors.ENDC}     │")
+    print(f"│ ██████╔╝  ██║ ██║    ███║  ██████╔╝ ██║      ██║ ██║ ██╔╝      ██╗ ████████╗ {colors.GREEN}██║          ██║{colors.ENDC}     │")
+    print(f"│ ╚═════╝   ╚═╝ ╚═╝    ╚══╝  ╚═════╝  ╚═╝      ╚═╝ ╚═╝ ╚═╝       ╚═╝ ╚═══════╝ {colors.GREEN}╚═╝          ╚═╝{colors.ENDC}     │")
+    print(f"└───────────────────────────────────────────────────────────────────────────────────────────────────┘\n")
 
     def set_n():
-        print(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] n = ", end='')
         try:
-            set_n.n = int(input())
+            set_n.n = int(input(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] n = "))
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] n > {colors.CYAN}0{colors.ENDC}")
             set_n()
@@ -40,9 +39,8 @@ def main():
         
 
     def set_p():
-        print(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] p = ", end='')
         try:
-            set_p.p = float(input())
+            set_p.p = float(input(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] p = "))
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] {colors.CYAN}0{colors.ENDC} > p <= {colors.CYAN}1{colors.ENDC}")
             set_p()
@@ -57,9 +55,8 @@ def main():
     p = set_p.p
 
     def set_k():
-        print(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] k = ", end='')
         try:
-            set_k.k = float(input())
+            set_k.k = float(input(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] k = "))
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] {colors.CYAN}0{colors.ENDC} >= k <={colors.CYAN} {n} {colors.ENDC}")
             set_k()
@@ -72,9 +69,8 @@ def main():
     k = set_k.k
 
     def set_r():
-        print(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] r = ", end='')
         try:
-            set_r.r = int(input())
+            set_r.r = int(input(f"[{colors.YELLOW}SET VALUE{colors.ENDC}] r = "))
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] r >= {colors.CYAN}0{colors.ENDC}")
             set_r()
@@ -86,9 +82,8 @@ def main():
     r = set_r.r
 
     def pdfORcdf():
-        print(f"[{colors.BLUE}INFO{colors.ENDC}] Do you want to calculate the Binomialpdf({colors.BLUE}pdf{colors.ENDC}) or Binomialcdf({colors.BLUE}cdf{colors.ENDC})?: ", end='')
         try:
-            pdfORcdf.answer = str(input())
+            pdfORcdf.answer = str(input(f"[{colors.BLUE}INFO{colors.ENDC}] Do you want to calculate the Binomialpdf({colors.BLUE}pdf{colors.ENDC}) or Binomialcdf({colors.BLUE}cdf{colors.ENDC})?: ")).lower()
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] You have to type {colors.BLUE}pdf{colors.ENDC} or {colors.BLUE}cdf{colors.ENDC}")
             pdfORcdf()
@@ -102,9 +97,8 @@ def main():
     pdfORcdf()
 
     def sla():
-        print(f"[{colors.BLUE}INFO{colors.ENDC}] single({colors.BLUE}s{colors.ENDC}) / list({colors.BLUE}l{colors.ENDC}) / all({colors.BLUE}a{colors.ENDC}): ", end='')
         try:
-            sla.value = str(input())
+            sla.value = str(input(f"[{colors.BLUE}INFO{colors.ENDC}] single({colors.BLUE}s{colors.ENDC}) / list({colors.BLUE}l{colors.ENDC}) / all({colors.BLUE}a{colors.ENDC}): ")).lower()
         except:
             print(f"[{colors.RED}ERROR{colors.ENDC}] You have to type {colors.BLUE}s{colors.ENDC} / {colors.BLUE}l{colors.ENDC} / {colors.BLUE}a{colors.ENDC}")
             sla()
@@ -194,8 +188,7 @@ def main():
                 x += 1
 
     def hist():
-        print(f"\n[{colors.BLUE}INFO{colors.ENDC}] Do you want print out the histogram? ({colors.BLUE}y{colors.ENDC}/{colors.BLUE}n{colors.ENDC}): ", end='')
-        answer = str(input())
+        answer = str(input(f"\n[{colors.BLUE}INFO{colors.ENDC}] Do you want print out the histogram? ({colors.BLUE}y{colors.ENDC}/{colors.BLUE}n{colors.ENDC}): ")).lower()
         if answer == "y":
             if pdfORcdf.answer == "pdf":
                 print()
@@ -252,9 +245,7 @@ def main():
     elif pdfORcdf.answer == "cdf":
         binomialcdf()
         hist()
-
 main()
-
-print(f"\n[{colors.BLUE}INFO{colors.ENDC}] If you want to rerun the program just press ENTER . . . ", end='')
-input()
-main()
+while True:
+    input(f"\n[{colors.BLUE}INFO{colors.ENDC}] If you want to rerun the program just press ENTER . . . ")
+    main()
